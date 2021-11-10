@@ -1,0 +1,53 @@
+Python 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+txt="Hi Sam!"
+x="mSa"
+y"eJo"
+SyntaxError: invalid syntax
+txt="Hi Sam!"
+x="mSa"
+y="eJo"
+mytable=txt.maketrans(x,y)
+print(txt.translate(mytable))
+Hi Joe!
+txt="Hi Sam!"
+x"Sam"
+SyntaxError: invalid syntax
+x="Sam"
+y="Joe"
+mytable=txt.maketrans(x,y)
+print(txt.translate(mytable))
+Hi Joe!
+txt="Good night Sam!"
+x="mSa"
+y="eJo"
+z="odnight"
+mytable=txt.maketrans(x,y,z)
+print(txt.translate(mytable))
+G  Joe!
+txt="Good night Sam!"
+x="mSa"
+y="eJo"
+z="odnght"
+print(txt.maketrans(x,y,z))
+{109: 101, 83: 74, 97: 111, 111: None, 100: None, 110: None, 103: None, 104: None, 116: None}
+
+txt="I could eat bananas all day"
+x=txt.partition("bananas")
+print(x)
+('I could eat ', 'bananas', ' all day')
+
+txt="I could eat banans all day"
+x=txt.partition("apples")
+print(x)
+('I could eat banans all day', '', '')
+
+txt="one one was a race horse, two two was one too."
+x=txt.replace("one","three")
+print(x)
+three three was a race horse, two two was three too.
+
+txt="one one was a race horse, two two was one too."
+x=txt.replace("one","three",2)
+print(x)
+three three was a race horse, two two was one too.
